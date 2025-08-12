@@ -1,4 +1,3 @@
-#RUNNING 24 JUNE, DONT CHANGE!
 import os
 import pandas as pd
 import numpy as np
