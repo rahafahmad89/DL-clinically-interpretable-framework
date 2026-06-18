@@ -112,20 +112,6 @@ python dl_pipeline.py \
 
 ---
 
-## 🧠 Deep Learning Architectures
-
-| Model | Architecture |
-|-------|-------------|
-| MLP | Multi-layer perceptron with LayerNorm and LeakyReLU |
-| DNN | Deep feedforward network with BatchNorm |
-| CNN | 1D convolutional network |
-| LSTM | Conv1D + stacked LSTM layers |
-| RNN | Vanilla recurrent network |
-| GRU | Stacked GRU with dense head |
-| Transformer | Multi-head self-attention with residual connections |
-
----
-
 ## 📊 Output Artifacts
 
 | File | Description |
@@ -155,25 +141,13 @@ python dl_pipeline.py \
 
 ---
 
-## 📈 Evaluation Strategy
-
-- **Multi-seed evaluation**: all models trained across five seeds (42, 101, 202, 303, 404); best seed selected per model based on internal AUC
-- **Composite scoring**: model selection uses a weighted combination of AUC, Precision, Recall, F1, Specificity, Sensitivity, MCC, and Kappa
-- **External validation**: final models evaluated on an independent held-out set not seen during training or feature selection
-- **Stratified split**: single 80/20 stratified train/test split with 1000-iteration bootstrap CIs
-- **Statistical testing**: Z-test, Shapiro-Wilk, Levene, ANOVA, Mann-Whitney U, and Kruskal-Wallis used to assess score distributions across models
-- **Calibration**: isotonic regression recalibration evaluated via ECE and Brier score decomposition
-- **AUC comparison**: DeLong et al. (1988) method for pairwise significance testing
-
----
-
 ## 📚 Citation
 
 ```bibtex
 @article{ahmad2025interpretableDL,
   author    = {Ahmad, Rahaf M. and Al Dhaheri, Noura and Mohamad, Mohd Saberi and Ali, Bassam R.},
   title     = {Clinically Interpretable Deep Learning for Breast Cancer Missense Variant Pathogenicity Prediction},
-  year      = {2025},
+  year      = {2026},
   journal   = {To be updated upon acceptance},
   url       = {https://github.com/rahafahmad89/DL-clinically-interpretable-framework}
 }
